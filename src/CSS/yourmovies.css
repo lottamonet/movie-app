@@ -1,0 +1,311 @@
+.App {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e6e1c5;
+  box-sizing: border-box;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+#header {
+  background-color: #395c6b;
+  height: 262px;
+  margin-bottom: 2em;
+}
+
+#footer {
+  background-color: #395c6b;
+}
+
+#anchor {
+  position: relative;
+  left: -10em;
+}
+
+#logo {
+  font-size: 40px;
+  color: #e6e1c5;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  position: relative;
+  left: -3em;
+  top: 0.5em;
+}
+
+.header-title {
+  display: flex;
+  font-size: 56px;
+  color: #e6e1c5;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  position: relative;
+  left: 0.5em;
+  top: 2em;
+  margin: 0px !important;
+  width: 302px;
+}
+
+#title1 {
+  margin-right: 0.2em;
+}
+
+#title2 {
+  margin-left: 0.2em;
+}
+
+.your-movies-btn {
+  font-size: 16px;
+  background-color: #395c6b;
+  border: 2px solid #d4cb92;
+  border-radius: 300px;
+  color: #d4cb92;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  height: 30px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#profile-anchor {
+  position: relative;
+  left: 7em;
+  top: -4.5em;
+}
+
+#search-btn {
+  font-size: 16px;
+  background-color: #395c6b;
+  border-radius: 300px;
+  border: none;
+  color: #d4cb92;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  height: 30px;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-bottom: 1em;
+}
+
+#movie {
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#search-label {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  left: -8.3em;
+  font-weight: 700;
+}
+
+.movie-card-img {
+  border-radius: 20px;
+}
+
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+  .App {
+    width: inherit;
+  }
+  #header {
+    background-color: #395c6b;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+  }
+
+  #anchor {
+    position: relative;
+    left: 0em;
+  }
+
+  #logo {
+    font-size: 40px;
+    color: #e6e1c5;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    position: relative;
+    left: 1em;
+  }
+  .your-movies-btn {
+    font-size: 16px;
+    background-color: #395c6b;
+    border: 2px solid #d4cb92;
+    border-radius: 300px;
+    color: #d4cb92;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    height: 30px;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: relative;
+    left: -1em;
+    top: 1.2em;
+  }
+
+  .header-title {
+    display: flex;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 56px;
+    color: #e6e1c5;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    height: 80px;
+    position: relative;
+    top: 2.5em;
+    left: 0.1em;
+  }
+
+  #profile-anchor {
+    position: relative;
+    left: 0em;
+    top: 0;
+  }
+
+  #movie {
+    width: 40%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  #search-section {
+    position: relative;
+    left: -4em;
+  }
+
+  #search-label {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    left: -8.7em;
+    font-weight: 700;
+  }
+
+  #search-btn {
+    font-size: 16px;
+    background-color: #395c6b;
+    border-radius: 300px;
+    border: none;
+    color: #d4cb92;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    height: 30px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    left: 15em;
+    top: -2.5em;
+  }
+
+  #movie-card-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .movie-card {
+    width: 40%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #footer {
+    background-color: #395c6b;
+    height: 354px !important;
+  }
+
+  #info-footer-section {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 4em !important;
+  }
+
+  #menu {
+    position: relative;
+    left: 20em;
+    top: -10em;
+  }
+
+  .footer-link {
+    position: relative;
+    left: 22.3em;
+    top: -10em;
+  }
+
+  #socials-footer-section {
+    display: flex;
+    border-top: 1px solid rgba(230, 225, 197, 0.1);
+    margin-left: 4em !important;
+    margin-right: 4em !important;
+  }
+
+  #fb {
+    margin-left: 0em !important;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  #title1,
+  #title2 {
+    font-size: 72px;
+  }
+
+  .header-title {
+    position: relative;
+    left: -1em;
+  }
+
+  #movie {
+    width: 25%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  #search-label {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    left: -9.5em;
+    font-weight: 700;
+  }
+
+  #search-btn {
+    font-size: 16px;
+    background-color: #395c6b;
+    border-radius: 300px;
+    border: none;
+    color: #d4cb92;
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: 700;
+    height: 30px;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 1em;
+    position: relative;
+    left: 17em;
+    top: -2.5em;
+  }
+
+  #movie-card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 5em;
+  }
+
+  .movie-card {
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+}
