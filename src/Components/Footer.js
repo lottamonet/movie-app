@@ -76,9 +76,9 @@ const Footer = (props) => {
                 
             </div>
             <div id="socials-footer-section" style={style.socials}>
-                <a href={fbLink} target="_blank" style={style.socialsMargin} id="fb"><img src={facebook} /></a>
-                <a href={twitterLink} target="_blank" style={style.socialsMargin} id="twitter"><img src={twitter} /></a>
-                <a href={instaLink} target="_blank" style={style.socialsMargin} id="insta"><img src={instagram} /></a>
+                <a href={fbLink} target="_blank" rel="noreferrer" style={style.socialsMargin} id="fb"><img src={facebook} alt="facebook"/></a>
+                <a href={twitterLink} target="_blank" rel="noreferrer" style={style.socialsMargin} id="twitter"><img src={twitter} alt="twitter" /></a>
+                <a href={instaLink} target="_blank" rel="noreferrer" style={style.socialsMargin} id="insta"><img src={instagram} alt="instagram" /></a>
             </div>
             <Outlet />
         </div>

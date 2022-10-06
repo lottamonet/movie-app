@@ -89,7 +89,7 @@ const Profile = () => {
                                 </div>
                                 <div id="avatar-sec">
                                     <img id="profilePic"  src={profilePic} alt="avatar" style={{height: "50px", width: "50px", borderRadius: "50%", position: "relative", left: "1.5em"}}/>
-                                    <label htmlFor="actual-btn" id="add" ><img src={Add} /></label>
+                                    <label htmlFor="actual-btn" id="add" ><img src={Add} alt="add button" /></label>
                                     <input ref={imageRef} id="actual-btn" onChange={updateImage} type="file" accept="image/*"  name="profilePic"  style={{visibility: "hidden"}}/>
                                     <span>Add your profile picture</span>
                                 </div>
@@ -374,7 +374,7 @@ const Profile = () => {
                                                         <div className="titles-wrapper">
                                                             <span className="movieTitles">{title}</span>
                                                         </div>
-                                                        <span className="cancel" ><img src={cancel}  /></span>
+                                                        <span className="cancel" ><img src={cancel} alt="cancel button" /></span>
                                                     </div>
                                                 
                                                 )

@@ -8,7 +8,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import YourMovies from './Pages/YourMovies';
+// import YourMovies from './Pages/YourMovies';
 import Profile from './Pages/Profile';
 
 

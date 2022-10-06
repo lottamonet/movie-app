@@ -30,7 +30,7 @@ const YourMovies = () => {
     }
   useEffect(() => {
     getMovie(searchMovie.movieSearch)
-  }, [searchMovie]);
+  });
 
     return ( 
         <div id="body">
