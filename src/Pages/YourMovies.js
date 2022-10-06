@@ -18,6 +18,8 @@ const YourMovies = () => {
         console.log(searchMovie);
     };
 
+    
+  useEffect(() => {
     async function getMovie(title, i) {
         title = searchMovie.movieSearch;
          let response = await fetch(`http://www.omdbapi.com/?apikey=11448ed6&t=${title}}`);  
@@ -28,7 +30,6 @@ const YourMovies = () => {
         console.log(movieDataArr, 'test movie data array');
         setMovieData(movieDataArr);
     }
-  useEffect(() => {
     getMovie(searchMovie.movieSearch)
   }, []);
 
