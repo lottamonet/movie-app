@@ -30,7 +30,7 @@ const YourMovies = () => {
     }
   useEffect(() => {
     getMovie(searchMovie.movieSearch)
-  });
+  }, []);
 
     return ( 
         <div id="body">
@@ -38,7 +38,7 @@ const YourMovies = () => {
             <div id="search-section">
                 <label htmlFor="search" id="search-label" >Search</label><br/>
                 <input type="search" name="movieSearch" id="movie"  value={searchMovie.movieSearch} onChange={e => handleSearchMovie(e)} /><br/>
-                <button type="submit" id="search-btn">Search</button>
+                <button type="submit" id="search-btn" onClick={getMovie}>Search</button>
             </div>
             <div id="movie-card-section">
                 {
